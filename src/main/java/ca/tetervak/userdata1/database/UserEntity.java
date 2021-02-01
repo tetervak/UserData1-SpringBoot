@@ -19,14 +19,6 @@ public class UserEntity {
     @Column(name="last_name")
     private String lastName;
 
-    public UserEntity() {
-    }
-
-    public UserEntity(String firstName, String lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
     public Integer getId() {
         return id;
     }

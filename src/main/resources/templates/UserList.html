@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/main.css" th:href="@{css/main.css}">
+    <link rel="stylesheet" href="../static/css/footer.css" th:href="@{css/footer.css}">
+    <title>List Users</title>
+</head>
+<body>
+<header>
+    <h1>User Data 1</h1>
+</header>
+<main>
+    <h2>User List</h2>
+    <ol>
+        <li th:each="u: ${users}"
+            th:text="|${u.firstName} ${u.lastName}|">Harry Potter</li>
+        <!--/*-->
+        <li>Hermione Granger</li>
+        <li>Ron Weasley</li>
+        <!--*/-->
+    </ol>
+</main>
+<footer>
+    Sheridan College&nbsp;&nbsp;<span class='hart'>&#9825;</span>&nbsp;&nbsp;2021
+</footer>
+</body>
+</html>
